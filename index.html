@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Editable Resume Builder by Aqsa</h1>
+    <form id="resumeForm">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">E-mail: </label>
+            <input type="text" id="email" name="email" required>
+
+            <label for="phone">Phone no.: </label>
+            <input type="number" id="phone" name="phone" required>
+        </fieldset><br>
+
+        <fieldset>
+            <legend>Educational Background</legend>
+            <label for="Education">Education</label>
+            <textarea name="Education" id="Education" rows="4" required></textarea>
+        </fieldset><br>
+
+        <fieldset>
+            <legend>Work Experience</legend>
+            <label for="Experience">Experience</label>
+            <textarea name="Experience" id="Experience" rows="4" required></textarea>
+        </fieldset><br>
+
+        <fieldset>
+            <legend>Core Skills</legend>
+            <label for="Skills">Skills</label>
+            <textarea name="Skills" id="Skills" rows="4" required></textarea>
+        </fieldset><br>
+
+        <button type="submit">Generate your Resume</button>
+    </form>
+
+    <div id="resumeOutput">
+        <!-- Resume will be generated below -->
+    </div>
+
+    <script src="script.js"></script> 
+</body>
+</html>
